@@ -1,0 +1,91 @@
+ html, body { height: 100%;
+    background-color: rgb(28, 29, 29); 
+    }
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: lightgray;
+}
+
+img {
+    height: 75%;
+}
+
+a:link, a:visited {
+    color: lightgray;
+    text-decoration: none;
+}
+
+/* a:visited {
+    animation: fadeOut 1500s;
+} */
+
+/* a.disappears:visited {
+} */
+
+.centered {
+    height: 100%;
+    display: flex;
+    background: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.top {
+    position: absolute;
+    left: 50%;
+    top: 7%;
+    transform: translate(-7%, -50%);
+}
+
+.left {
+    position: absolute;
+    top: 40%;
+    left: 7%;
+    transform: translate(-40%, -7%);
+}
+
+.right {
+    position: absolute;
+    top: 40%;
+    left: 92%;
+    transform: translate(-40%, -7%);
+}
+
+.bottomright {
+    position: absolute;
+    top: 90%;
+    left: 92%;
+    transform: translate(-90%, -7%)
+}
+
+.fade-out {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: rgb(28, 29, 29); */
+    animation: fadeOut 2500s;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    1% {opacity: 0;}
+    100% {opacity: 0;}    
+}
+
+.disappears:visited {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(28, 29, 29);
+    animation: 1000s;
+}
+
+.fade-in:link {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: darkgray; */
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}    
+}
+
+
