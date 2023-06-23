@@ -8,5 +8,5 @@ function countFunction() {
 if (localStorage.getItem("incCount2") > 2) {
     const container = document.getElementById("container");
     const d = document.getElementById("door");
-    d.outerHTML = "<a href = exit.html>door</a>";
+    d.outerHTML = "<a class=fade-in href = exit.html>door</a>";
 } 

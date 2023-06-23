@@ -14,10 +14,17 @@ give some thought to the "path" through this narrative--where and how I want the
 	
 
         <div class="centered">
-            <p><a class="fade-in" href = "doors.html">hallway</a></p>
+            <p><a class="fade-in" id="door" href = "doors.html">hallway</a></p>
         </div>
 
-      
+        <script>
+          if (localStorage.getItem("endFlag") == 1) {
+    const container = document.getElementById("container");
+    const d = document.getElementById("door");
+    d.outerHTML = "<a class=fade-in href = https://duckduckgo.com/><i>This space can no longer be found</i></a>";
+          }
+        </script>
+
 
   </body>
 </html>
